@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cell {
+            width: 8;
+            height: 8;
+            background-color: green;
+        }
+
+        .noCell {
+            width: 8;
+            height: 8;
+            background-color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        fieldset {
+            height: fit-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <table id="main" border=1>
+
+        </table>
+        <fieldset>
+            <legend>
+                Info:
+            </legend>
+            <table>
+                <tr>
+                    <td>Day:</td>
+                    <td id="day">0</td>
+                </tr>
+                <tr>
+                    <td>
+                        Row:
+                    </td>
+                    <td>
+                        <input type="number" id="row">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+
+                        <button id="submit_row">Reset Row</button>
+
+
+                    </td>
+                </tr>
+            
+                 <p>(Press R to reset map and I to iterate)</p>   
+                
+                    
+                    
+                
+            </table>
+        </fieldset>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
